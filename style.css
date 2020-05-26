@@ -1,0 +1,111 @@
+html{
+    background: #000;
+    color: white;
+    font-family: 'Oswald', sans-serif;
+    font-size:24px;
+    line-height: 1.5;
+    font-weight:200;
+    letter-spacing: 0.05rem;
+}
+
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+li{
+    list-style: none;
+}
+
+button{
+    outline:none;
+    background:transparent;
+    border: none;
+}
+
+
+
+.section-outer{
+    width:100vw;
+}
+
+#faq .section-inner{
+    width:80%;
+    max-width: 800px;
+    margin-right:auto;
+    margin-left:auto;
+    padding: 2rem 1rem;
+}
+
+h1{
+    text-align:center;
+    font-size:2.5rem;
+    font-weight:600;
+}
+
+#faq-container{
+    padding: 1rem;
+}
+
+#faq-container li{
+    width:100%;
+    margin-bottom:0.3rem;
+}
+
+
+#faq-container li .faq-question{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    background: #303030;
+    margin-bottom:0.1rem;
+    padding: 0.6rem 1.7rem;
+    font-size: 1rem;
+}
+
+#faq-container li .faq-question .btn{
+    width:24px;
+    height:24px;
+    position: relative;
+    transition:all 1s;
+}
+
+#faq-container li .faq-question .btn-line{
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    position:absolute;
+}
+#faq-container li .faq-question .btn-line:first-child{
+    width:20px;
+    height:2px;
+}
+#faq-container li .faq-question .btn-line:last-child{
+  width:2px;
+  height:20px;
+}
+
+.faq-open .btn{
+    transform: rotate(135deg);
+}
+
+.faq-close .btn{
+    transform: rotate(0);
+}
+
+.faq-close .faq-answer{
+    max-height:0;
+    overflow: hidden;
+    background: #303030;
+}
+
+.faq-open .faq-answer{
+    max-height:1200px;
+    padding: 1.2rem 2rem;
+    background: #303030;
+}
+
+
