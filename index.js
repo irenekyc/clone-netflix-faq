@@ -1,5 +1,4 @@
 
-
 document.getElementById('faq-container').addEventListener('click', e=>{
    if(e.target.parentNode.id.includes("faq-")){
        e.target.parentNode.classList.toggle("faq-close")
